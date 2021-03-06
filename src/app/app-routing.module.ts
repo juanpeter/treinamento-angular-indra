@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PrimeiroComponenteComponent } from './core/primeiro-componente/primeiro-componente.component';
-import { SegundoComponenteComponent } from './core/segundo-componente/segundo-componente.component';
+import { IncluirComponent } from './core/alunos/incluir/incluir.component';
+import { ListarComponent } from './core/alunos/listar/listar.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: SegundoComponenteComponent
+    path: "alunos/incluir",
+    component: IncluirComponent
   },
   {
-  path: 'alunos',
-  component: PrimeiroComponenteComponent
-}];
+    path: "alunos/listar",
+    component: ListarComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

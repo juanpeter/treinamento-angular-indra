@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header">
+    {{ titulo }}
+  </div>
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
+  <div class="card-footer text-center" *ngIf="showFooter">
+    <app-button [iconClass]="'fa fa-check'"> Confirmar</app-button>
+    <app-button [iconClass]="'fa fa-angle-left'"> Voltar</app-button>
+  </div>
+</div>
