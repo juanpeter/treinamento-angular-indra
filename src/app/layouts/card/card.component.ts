@@ -1,4 +1,5 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, Input, OnDestroy, OnInit, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-card',
@@ -14,6 +15,11 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // alert("Componente botão iniciado")
+  }
+
+  esconderFooter() {
+    this.showFooter = false
   }
 
 }
